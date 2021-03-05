@@ -24,10 +24,11 @@ function Button(props) {
 export const Sidebar = () => {
     return (
         <>
-            <div class="flex min-w-1/8 shadow-lg px-5 h-screen w-1/8 bg-gray-700">
+            <div class="flex min-w-10 shadow-lg px-5 h-screen w-1/8 bg-gray-700">
                 <div class="flex-col my-10 mx-auto align-items">
                     <ProfileComp width = "160" height="150"/>
                     <Button text="Home" href="/posts/first-post" />
+                    <Button text="About" href="/about" />
                     <Button text="Posts" href="/posts/landing" />
                 </div>
             </div>
