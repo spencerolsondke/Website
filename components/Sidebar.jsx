@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Button from './Button.jsx'
+import Link from 'next/link'
 
 function ProfileComp(props){
     const [shown, setShown] = useState(false);
@@ -12,12 +13,6 @@ function ProfileComp(props){
                 src="/images/profile-small.jpg"
                 alt="Spencer Matei Olson"
                 />
-                /*Commmetn */
-            {shown && (
-                <div class ="absolute flex-grow w-max h-max rounded-lg bg-black opacity-50 z-0">
-                    Overlay
-                </div>
-            )}
         </div>
         <p class="mb-10 text-white text-center text-lg">Spencer Matei Olson</p>
     </div>
@@ -26,7 +21,7 @@ function ProfileComp(props){
 export default function Sidebar() {
     return (
         <>
-            <div class="flex min-w-10 shadow-lg px-5 h-screen w-1/8 bg-gray-700">
+            <div class="fixed flex min-w-10 shadow-lg px-5 h-screen w-1/8 bg-gray-700 inset-y-0 left-0">
                 <div class="flex-col my-10 mx-auto align-items">
                     <ProfileComp width = "160" height="150"/>
                     <Button text="Home" href="/" />
