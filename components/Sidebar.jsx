@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Button from './Button.jsx'
-import Link from 'next/link'
 
 function ProfileComp(props){
     const [shown, setShown] = useState(false);

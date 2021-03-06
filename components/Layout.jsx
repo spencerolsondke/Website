@@ -4,7 +4,7 @@ export default function Layout({children}) {
         <div class="flex">
             <Sidebar />
             <div class="w-1/8"/>
-            <div class="flex-col mx-auto mt-72">
+            <div class="flex-col mx-auto">
                 {children}
             </div>
         </div>
