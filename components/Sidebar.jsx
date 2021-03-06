@@ -12,6 +12,7 @@ function ProfileComp(props){
                 src="/images/profile-small.jpg"
                 alt="Spencer Matei Olson"
                 />
+                /*Commmetn */
             {shown && (
                 <div class ="absolute flex-grow w-max h-max rounded-lg bg-black opacity-50 z-0">
                     Overlay
