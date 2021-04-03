@@ -12,12 +12,12 @@ export default function Home() {
         <title>Spencer Matei Olson</title>
       </Head>
       <Layout>
-        <Card arrow={true} id="Start">
+        <Card arrowNext={true} next="About" id="Start">
           <Title class="flex-none" text="Welcome to my webpage!"/>
           <p>Made with React and Next.js</p>
           <p>Designed by Spencer Matei Olson</p>
         </Card>         
-        <Card id="About">
+        <Card id="About" arrowPrev={true} prev="Start">
           <Title text="About me"/>
           <p>
             Hello there! I am a half-American half-Romanian multiculturalist who calls Europe his home. I've spent most of my adult life studying Computer Science
