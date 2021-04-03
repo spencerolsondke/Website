@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Title from '../components/Title.jsx'
 import Layout from '../components/Layout.jsx'
 import Card from '../components/Card.jsx'
+import disableScroll from 'disable-scroll'
 
 export default function Home() {
   return (
@@ -11,18 +12,17 @@ export default function Home() {
         <title>Spencer Matei Olson</title>
       </Head>
       <Layout>
-        <Card>
+        <Card arrow={true} id="Start">
           <Title class="flex-none" text="Welcome to my webpage!"/>
-          <p class="flex-none font-sans text-2xl text-white-dark text-center">Made with React and Next.js</p>
-          <p class="flex-none font-sans text-2xl text-white-dark text-center">Designed by Spencer Matei Olson</p>
-          <div class="absolute mx-auto mb-10 inset-x-0 bottom-0">
-            <svg class="flex h-5 inset-x-0 mx-auto bottom-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clipRule="evenodd" />
-            </svg>
-          </div>
+          <p>Made with React and Next.js</p>
+          <p>Designed by Spencer Matei Olson</p>
         </Card>         
-        <Card>
-          <Title text="Next screen"/>
+        <Card id="About">
+          <Title text="About me"/>
+          <p>
+            Hello there! I am a half-American half-Romanian multiculturalist who calls Europe his home. I've spent most of my adult life studying Computer Science
+            and exploring the different facets of that field.
+          </p>
         </Card>
       </Layout>
     </>
