@@ -20,8 +20,8 @@ export default function Home() {
         <Card id="About" arrowPrev={true} prev="Start">
           <Title text="About me"/>
           <p>
-            Hello there! I am a half-American half-Romanian multiculturalist who calls Europe his home. I've spent most of my adult life studying Computer Science
-            and exploring the different facets of that field.
+            Hello there! I am a half-American half-Romanian university student and tech enthusiast who calls Europe his home. 
+            I've spent most of my adult life studying Computer Science and exploring the different facets of that field.
           </p>
         </Card>
       </Layout>
